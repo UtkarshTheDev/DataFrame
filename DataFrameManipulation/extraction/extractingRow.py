@@ -9,14 +9,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Normal Extraction
-print(df["SPORTS"])
+# Row Extraction
 
-
-# Multiple Column Extraction
-
-print(df[["SPORTS","Students"]])
-
-# Multiple Column Extraction with Range
-
-print(df["marks":"SPORTS"])
+print(df.loc[["marks","Students"],:])
