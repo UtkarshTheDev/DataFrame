@@ -1,14 +1,16 @@
 import pandas as pd
 
+students =["Neha","Manav","Mitu","Mike","Jamal"] 
 data = {
         "marks":[79.5,83.75,74,88.5,89],
         "SPORTS": ["CRICKET","BADMINTON","FOOTBALL","FOOTBALL","CRICKET"],
-        "Students": ["Neha","Manav","Mitu","Mike","Jamal"]
         }
 
-
-df = pd.DataFrame(data)
+df = pd.DataFrame(data,index=students)
 
 # Row Extraction
+# Usage: df_name.loc[["Rows","Name"],["Column","Name"]] 
+print(df.loc[["Manav","Mike"],:]) # For All Columns of Specific Rows
 
-print(df.loc[["marks","Students"],:])
+# Row and Column Extraction Both
+print(df.loc[["Manav","Mike"],["marks"]]) # For Specific Columns

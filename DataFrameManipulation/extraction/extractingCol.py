@@ -20,3 +20,6 @@ print(df[["SPORTS","Students"]])
 # Multiple Column Extraction with Range
 
 print(df["marks":"SPORTS"])
+
+# Extraction with LOC Attribute
+extract = df.loc[:,["marks"]]
