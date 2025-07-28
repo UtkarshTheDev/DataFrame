@@ -1,42 +1,64 @@
+# Import the pandas library, which is essential for working with DataFrames.
 import pandas as pd
 
-students =["Neha","Manav","Mitu","Mike","Jamal"] 
+# Define a list of student names that will be used as the index for our DataFrame.
+# An index is like a label for each row, making data retrieval easier and more intuitive.
+students = ["Neha", "Manav", "Mitu", "Mike", "Jamal"]
+
+# Create a dictionary to hold the data for our DataFrame.
+# The keys of the dictionary will become the column names,
+# and the values (lists of data) will populate the rows.
 data = {
-        "marks":[79.5,83.75,74,88.5,89],
-        "SPORTS": ["CRICKET","BADMINTON","FOOTBALL","FOOTBALL","CRICKET"],
-        }
+    "marks": [79.5, 83.75, 74, 88.5, 89],  # Column for student marks
+    "SPORTS": ["CRICKET", "BADMINTON", "FOOTBALL", "FOOTBALL", "CRICKET"],  # Column for the sport each student plays
+}
 
-df = pd.DataFrame(data,index=students)
+# Create a DataFrame using the pandas DataFrame constructor.
+# We pass our 'data' dictionary and specify 'students' as the index.
+df = pd.DataFrame(data, index=students)
 
-# Provide Indexes of DF
+# --- DataFrame Attributes ---
+# Attributes are properties of the DataFrame that give us information about it.
+
+# Get the index (row labels) of the DataFrame.
 indexes = df.index
+print("Index:", indexes)
 
-
-# Provide Columns of DF
+# Get the columns (column labels) of the DataFrame.
 columns = df.columns
+print("Columns:", columns)
 
-# Provides Both Rows and Columns of DF
+# Get a list containing both the index (rows) and columns.
+# It returns a list where the first element is the index and the second is the columns.
 axes = df.axes
-# Provide DataTypes of DF
+print("Axes:", axes)
+
+# Get the data types of each column. This is useful for understanding what kind of data each column holds (e.g., float, object).
 dtypes = df.dtypes
+print("DataTypes:", dtypes)
 
-# Provide Size of DF
+# Get the total number of elements in the DataFrame (rows * columns).
 size = df.size
+print("Size:", size)
 
-# Provide No. of Rows,Columns of DF
+# Get a tuple representing the dimensions of the DataFrame (number of rows, number of columns).
 shape = df.shape
+print("Shape:", shape)
 
-# Provide Values of DF
+# Get the actual data of the DataFrame as a NumPy array.
+# This is useful when you need to perform numerical computations.
 values = df.values
+print("Values:", values)
 
-# True/False for DF is Empty or not
+# Check if the DataFrame is empty. Returns True if it has no data, False otherwise.
 empty = df.empty
+print("Is Empty:", empty)
 
-# Provide Dimension of DF
+# Get the number of dimensions of the DataFrame. For a DataFrame, this is always 2.
 ndim = df.ndim
+print("Number of Dimensions:", ndim)
 
-# Give the Transpose of DF
+# Get the transpose of the DataFrame.
+# The transpose swaps the rows and columns. Rows become columns and columns become rows.
 transpose = df.T
-
-
-print(indexes,columns,axes,dtypes,size,shape,values,empty,ndim,transpose)
+print("Transpose:\n", transpose)
