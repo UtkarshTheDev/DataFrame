@@ -12,3 +12,10 @@ products = [
 df = pd.DataFrame(products,index=["Product","Price"])
 print(df)
 print("\n" + "="*30 + "\n")
+
+# Question2: Create a Series from a list of strings where each string represents a city and its country.
+
+# Solution
+ser = pd.Series(["Moscow","Budapest","Bern"],index=["Russia","Hungary","Switzerland"])
+print(ser)
+print("\n" + "="*30 + "\n")
