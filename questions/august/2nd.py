@@ -16,7 +16,7 @@ print("\n" + "="*30 + "\n")
 # (i) Add a new column named "Total" that contains the sum of Score1 and Score2 for each student.
 df["Total"] = df["Score1"] + df["Score2"]
 print(df)
-print("\n" + "=k"*30 + "\n")
+print("\n" + "="*30 + "\n")
 
 # (ii) Find the maximum score in Score1 and Score2.
 print("Maximum Score1",df["Score1"].max())
