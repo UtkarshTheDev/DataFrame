@@ -1,6 +1,6 @@
-# Pandas DataFrame Practice Ground
+# Pandas DataFrame Resources 
 
-Welcome to the Pandas DataFrame Practice Ground! This project is a collection of beginner-friendly Python scripts designed to help you learn and practice the fundamentals of creating, manipulating, and inspecting [Pandas DataFrames](https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe).
+Welcome to the Pandas DataFrame Resources! This project is a collection of beginner-friendly Python scripts designed to help you learn and practice the fundamentals of creating, manipulating, and inspecting [Pandas DataFrames](https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe).
 
 If you're new to data science or the Pandas library, this is the perfect place to start. Each script is a self-contained example focusing on a specific concept.
 
