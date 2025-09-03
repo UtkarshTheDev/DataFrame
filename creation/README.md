@@ -128,3 +128,89 @@ Q2     1600.0     2400.0
 Q3     1800.0        NaN  <-- NaN because Q3 is missing for Product_B
 Q4        NaN     2900.0  <-- NaN because Q4 is missing for Product_A
 ```
+
+---
+
+## 4. From a List of Lists
+
+This method is useful when your data is in a simple tabular format, like a list of rows.
+
+-   Each **inner list** represents a **row**.
+-   You must provide a separate list of **column names**.
+
+### Code Example:
+
+```python
+# Import the pandas library
+import pandas as pd
+
+# Define the data as a list of lists
+list_of_lists = [
+    ["Alice", 25, "New York"],
+    ["Bob", 30, "Los Angeles"],
+    ["Charlie", 35, "Chicago"]
+]
+
+# Define the column headers
+columns = ["Name", "Age", "City"]
+
+# Create the DataFrame
+df = pd.DataFrame(data=list_of_lists, columns=columns)
+
+# Print the result
+print(df)
+```
+
+### Output:
+
+```
+      Name  Age         City
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+```
+
+---
+
+## 5. From a CSV File
+
+This is one of the most common and powerful ways to create a DataFrame. The `pd.read_csv()` function is highly versatile.
+
+-   Pandas automatically uses the **first row** of the CSV as the **column headers**.
+-   It infers data types automatically.
+
+### Code Example:
+
+First, create a sample CSV file named `sample_data.csv` in the `creation/data` directory:
+
+```csv
+Name,Age,City
+Alice,25,New York
+Bob,30,Los Angeles
+Charlie,35,Chicago
+```
+
+Now, read the CSV file using pandas:
+
+```python
+# Import the pandas library
+import pandas as pd
+
+# Specify the path to the CSV file
+csv_file_path = "creation/sample_data.csv"
+
+# Create the DataFrame using read_csv()
+df = pd.read_csv(csv_file_path)
+
+# Print the result
+print(df)
+```
+
+### Output:
+
+```
+      Name  Age         City
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+```

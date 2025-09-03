@@ -51,6 +51,8 @@ Understanding how to get data *into* a DataFrame is the first step. The scripts 
 -   **`creation/WithDict.py`**: Create a DataFrame from a dictionary of dictionaries.
 -   **`creation/DictsofList.py`**: Create a DataFrame from a dictionary of lists (a very common method).
 -   **`creation/ListOfDicts.py`**: Create a DataFrame from a list of dictionaries.
+-   **`creation/ListOfLists.py`**: Create a DataFrame from a list of lists.
+-   **`creation/FromCSV.py`**: Create a DataFrame from a CSV file.
 
 **For more details, see the [`creation/README.md`](creation/README.md).**
 
