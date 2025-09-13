@@ -1,4 +1,4 @@
-# Pandas DataFrame Resources 
+# Pandas DataFrame Resources
 
 Welcome to the Pandas DataFrame Resources! This project is a collection of beginner-friendly Python scripts designed to help you learn and practice the fundamentals of creating, manipulating, and inspecting [Pandas DataFrames](https://pandas.pydata.org/docs/user_guide/dsintro.html#dataframe).
 
@@ -16,6 +16,7 @@ To use this project, you'll need Python and the Pandas library installed.
 ### Installation
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/UtkarshTheDev/dataframe.git
     cd dataframe
@@ -46,17 +47,18 @@ The best way to learn is by doing! Here’s a recommended path to follow:
 
 ### 1. Start with DataFrame Creation
 
-Understanding how to get data *into* a DataFrame is the first step. The scripts in the `creation/` directory show you how to create a DataFrame from common Python objects.
+Understanding how to get data _into_ a DataFrame is the first step. The scripts in the `creation/` directory show you how to create a DataFrame from common Python objects.
 
--   **`creation/WithDict.py`**: Create a DataFrame from a dictionary of dictionaries.
--   **`creation/DictsofList.py`**: Create a DataFrame from a dictionary of lists (a very common method).
--   **`creation/ListOfDicts.py`**: Create a DataFrame from a list of dictionaries.
--   **`creation/ListOfLists.py`**: Create a DataFrame from a list of lists.
--   **`creation/FromCSV.py`**: Create a DataFrame from a CSV file.
+- **`creation/WithDict.py`**: Create a DataFrame from a dictionary of dictionaries.
+- **`creation/DictsofList.py`**: Create a DataFrame from a dictionary of lists (a very common method).
+- **`creation/ListOfDicts.py`**: Create a DataFrame from a list of dictionaries.
+- **`creation/ListOfLists.py`**: Create a DataFrame from a list of lists.
+- **`creation/FromCSV.py`**: Create a DataFrame from a CSV file.
 
 **For more details, see the [`creation/README.md`](creation/README.md).**
 
 **Example from `DictsofList.py`:**
+
 ```python
 import pandas as pd
 
@@ -77,11 +79,12 @@ print(df)
 
 Once you have a DataFrame, you'll want to know more about it—its size, shape, data types, etc. The `attributes/` directory contains a script that demonstrates how to access these properties.
 
--   **`attributes/attributes.py`**: Shows how to use attributes like `.shape`, `.columns`, `.index`, and `.dtypes`.
+- **`attributes/attributes.py`**: Shows how to use attributes like `.shape`, `.columns`, `.index`, and `.dtypes`.
 
 **For more details, see the [`attributes/README.md`](attributes/README.md).**
 
 **Example from `attributes.py`:**
+
 ```python
 # Assuming 'df' is the DataFrame from the previous example
 print(f"The shape of the DataFrame is: {df.shape}")
@@ -93,23 +96,24 @@ print(f"The data types are:\n{df.dtypes}")
 
 This is where the real power of Pandas comes in. The scripts in the `manipulation/` directory show you how to modify your DataFrame.
 
--   **`manipulation/AddColinDF.py`**: Add a new column.
--   **`manipulation/deletion.py`**: Delete rows and columns.
--   **`manipulation/renaming.py`**: Rename columns and index labels.
+- **`manipulation/AddColinDF.py`**: Add a new column.
+- **`manipulation/deletion.py`**: Delete rows and columns.
+- **`manipulation/renaming.py`**: Rename columns and index labels.
 
 **For more details, see the [`manipulation/README.md`](manipulation/README.md).**
 
 ### 4. Practice Data Extraction
 
-A huge part of data analysis is selecting the specific data you need. The `manipulation/extraction/` subdirectory is dedicated to this.
+A huge part of data analysis is selecting the specific data you need. The `extraction/` directory is dedicated to this.
 
--   **`extraction/extractingCol.py`**: Select one or more columns.
--   **`extraction/extractingRow.py`**: Select rows using `.loc[]` and `.iloc[]`.
--   **`extraction/individualExtraction.py`**: Get a single value using `.at[]` and `.iat[]`.
+- **`extraction/extractingCol.py`**: Select one or more columns.
+- **`extraction/extractingRow.py`**: Select rows using `.loc[]` and `.iloc[]`.
+- **`extraction/individualExtraction.py`**: Get a single value using `.at[]` and `.iat[]`.
 
-**For more details, see the [`manipulation/extraction/README.md`](manipulation/extraction/README.md).**
+**For more details, see the [`extraction/README.md`](extraction/README.md).**
 
 **Example from `extractingCol.py`:**
+
 ```python
 # Assuming 'df' is our student DataFrame
 # Extract the 'Name' and 'Math' columns
