@@ -18,7 +18,7 @@ df["Total"] = df["ODI"] + df["Test"]
 print(df)
 print("\n" + "="*30 + "\n")
 
-# (ii) Access the value at the second row and third column (i.e., ODI runs for the second cricketer).
+# (ii) Access the value at the third row and second column (i.e., ODI runs for the second cricketer).
 
 print(df.at[2,"ODI"])
 
